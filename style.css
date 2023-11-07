@@ -21,15 +21,21 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: #111;
+}
+
 /* ヘッダー */
 .header {
-    padding: 10px;
-    box-shadow: 3px 0 5px 5px #ededed;
+    padding: 10px 20px;
+    box-shadow: 3px 0 5px 3px #ededed;
 }
 
 .site-name {
     font-size: 40px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .site-name-initial {
@@ -132,4 +138,13 @@ li {
     font-size: 15px;
     padding: 0.5em 1em;
     background-color: rgb(226, 226, 226);
+}
+
+/* フッター */
+.footer-inner {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 15px;
 }

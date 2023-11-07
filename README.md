@@ -1,4 +1,1 @@
-# mosya_syokyuu
-# mosya_syokyuu
-# mosya_syokyuu_bem
-# mosya_syokyuu
+# BEMを使った模写初級コーディング

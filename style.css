@@ -1,0 +1,27 @@
+@charset "utif-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+}
+
+/* ヘッダー */
+.header {
+    padding: 10px;
+    box-shadow: 3px 0 5px 5px #ededed;
+}
+
+.site-name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.site-name-initial {
+    color: #00abae;
+}

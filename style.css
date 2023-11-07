@@ -96,8 +96,6 @@ a {
     align-items: center;
 }
 
-.works {}
-
 .works-content {
     width: 1076px;
     margin: auto;
@@ -106,10 +104,6 @@ a {
 .card-list {
     display: flex;
     gap: 13px;
-}
-
-.card-list__item {
-
 }
 
 .card__thumb {
@@ -147,4 +141,8 @@ a {
 
 .copyright {
     font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    
 }

@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>模写初級_BEM</title>
-    <link
-  href="https://unpkg.com/sanitize.css"
-  rel="stylesheet"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <h1 class="site-name">
-            <a href="#">
-                <span class="site-name-initial">P</span>ortfolio
-            </a>
-        </h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>模写初級_BEM</title>
 
-    <main>
-        <div class="container">
-            <section class="profile">
-                <h2 class="section-title"><span class="section-title-initial">P</span>rofile</h2>
+        <!-- リセットCSS -->
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
 
-                <div class="profile-content">
-                    <div class="profile__img">
-                        <img src="img/profile.png" alt="管理人の写真" width="166" height="166" >
+        <!-- Googleフォント -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1 class="site-name">
+                <a href="#"> <span class="site-name-initial">P</span>ortfolio </a>
+            </h1>
+        </header>
+
+        <main>
+            <div class="container">
+                
+                <!-- プロフィール -->
+                <section class="profile">
+                    <h2 class="section-title"><span class="section-title-initial">P</span>rofile</h2>
+
+                    <div class="profile-content">
+                        <div class="profile__img">
+                            <img src="img/profile.png" alt="管理人の写真" width="166" height="166" />
+                        </div>
+                        <p class="profile__name-text">テック　太郎</p>
+                        <p class="profile__skill-text">HTML / CSS / PHP / MySQL / Laravel / adobeXD</p>
+                        <p class="profile__description">
+                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                        </p>
+                        <div class="profile-icon">
+                            <img src="img/github.png" alt="GitHubのアイコン" width="55" height="52" />
+                            <img src="img/twitter.png" alt="Twitterのアイコン" width="56" height="46" />
+                        </div>
                     </div>
-                    <p class="profile__name-text">テック　太郎</p>
-                    <p class="profile__skill-text">HTML / CSS / PHP / MySQL / Laravel / adobeXD</p>
-                    <p class="profile__description">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    <div class="profile-icon">
-                        <img src="img/github.png" alt="GitHubのアイコン" width="55" height="52">
-                        <img src="img/twitter.png" alt="Twitterのアイコン" width="56" height="46">
+                </section>
+
+                <!-- ワークス -->
+                <section class="works">
+                    <h2 class="section-title"><span class="section-title-initial">W</span>orks</h2>
+                    <div class="works-content">
+                        <ul class="card-list">
+
+                            <!-- カード１ -->
+                            <li class="card-list__item">
+                                <div class="card">
+                                    <div class="card__thumb">
+                                        <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348" />
+                                    </div>
+                                    <h3 class="card__title">Twitterクローン</h3>
+                                    <p class="card__text">HTML / CSS / PHP / MySQL</p>
+                                    <div class="tag-wrapper">
+                                        <span class="tag">Webサイト</span>
+                                        <span class="tag">GitHub</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- カード２ -->
+                            <li class="card-list__item">
+                                <div class="card">
+                                    <div class="card__thumb">
+                                        <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348" />
+                                    </div>
+                                    <h3 class="card__title">Twitterクローン</h3>
+                                    <p class="card__text">HTML / CSS / PHP / MySQL</p>
+                                    <div class="tag-wrapper">
+                                        <span class="tag">Webサイト</span>
+                                        <span class="tag">GitHub</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- カード３ -->
+                            <li class="card-list__item">
+                                <div class="card">
+                                    <div class="card__thumb">
+                                        <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348" />
+                                    </div>
+                                    <h3 class="card__title">Twitterクローン</h3>
+                                    <p class="card__text">HTML / CSS / PHP / MySQL</p>
+                                    <div class="tag-wrapper">
+                                        <span class="tag">Webサイト</span>
+                                        <span class="tag">GitHub</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+        </main>
 
-            <section class="works">
-                <h2 class="section-title"><span class="section-title-initial">W</span>orks</h2>
-                <div class="works-content">
-                    <ul class="card-list">
-                        <li class="card-list__item">
-                            <div class="card">
-                                <div class="card__thumb">
-                                    <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348">
-                                </div>
-                                <h3 class="card__title">Twitterクローン</h3>
-                                <p class="card__text">HTML / CSS / PHP / MySQL</p>
-                                <div class="tag-wrapper">
-                                    <span class="tag">Webサイト</span>
-                                    <span class="tag">GitHub</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-list__item">
-                            <div class="card">
-                                <div class="card__thumb">
-                                    <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348">
-                                </div>
-                                <h3 class="card__title">Twitterクローン</h3>
-                                <p class="card__text">HTML / CSS / PHP / MySQL</p>
-                                <div class="tag-wrapper">
-                                    <span class="tag">Webサイト</span>
-                                    <span class="tag">GitHub</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-list__item">
-                            <div class="card">
-                                <div class="card__thumb">
-                                    <img src="img/work_1.jpeg" alt="Twitterクローンのホーム画面" width="348" height="348">
-                                </div>
-                                <h3 class="card__title">Twitterクローン</h3>
-                                <p class="card__text">HTML / CSS / PHP / MySQL</p>
-                                <div class="tag-wrapper">
-                                    <span class="tag">Webサイト</span>
-                                    <span class="tag">GitHub</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-inner">
-            <small class="copyright">Copyright ©︎　TECH I.S., Inc.</small>
-        </div>
-    </footer>
-</body>
+        <!-- フッター -->
+        <footer>
+            <div class="footer-inner">
+                <small class="copyright">Copyright ©︎　TECH I.S., Inc.</small>
+            </div>
+        </footer>
+    </body>
 </html>

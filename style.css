@@ -108,6 +108,9 @@ a {
 
 .card__thumb {
     margin-bottom: 15px;
+}
+
+.card__thumb img {
     border: 1px solid #ccc;
 }
 
@@ -144,5 +147,40 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-    
+    /* ヘッダー */
+    .header {
+        padding: 10px;
+    }
+
+    .site-name {
+        font-size: 31px;
+    }
+
+    /* メインコンテンツ */
+    .container {
+        padding: 50px 10px;
+    }
+
+    .profile-content {
+        width: auto;
+    }
+
+    .profile__name-text {
+        font-size: 18px;
+    }
+
+    .works-content {
+        width: auto;
+    }
+
+    .card-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* フッター */
+    .footer-inner {
+        padding-bottom: 15px;
+    }
+
 }
